@@ -1,0 +1,8 @@
+---
+- name: CIS benchmarks for VMware ESXi 8.0
+  hosts: ansible
+  gather_facts: false
+  become: false
+
+  roles:
+    - role: esxi_cis_check

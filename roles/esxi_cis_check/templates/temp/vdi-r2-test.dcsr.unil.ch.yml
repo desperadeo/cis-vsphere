@@ -1,0 +1,52 @@
+---
+## 1 - Hardware ##
+
+## 2 - Base
+Software.Acceptance.Level: "PartnerSupported"
+VMkernel.Boot.ExecInstalledOnly: "False"
+Ntp.Servers: "130.223.8.20,130.223.4.5"
+Ntpd.Service: "True"
+Hardware.TrustedPlatformModule: "NONE"
+UserVars.SuppressHyperthreadWarning: "0"
+Mem.ShareForceSalting: "2"
+
+## 3 - Management
+TSM-SSH.Service: "Unknown"
+TSM.Service: "Unknown"
+Slpd.Service: "Unknown"
+Sfcbd-watchdog.Service: "Unknown"
+Snmpd.Service: "Unknown"
+Config.HostAgent.plugins.solo.enableMob: "False"
+UserVars.DcuiTimeOut: "600"
+UserVars.ESXiShellInteractiveTimeOut: "0"
+UserVars.ESXiShellTimeOut: "0"
+UserVars.SuppressShellWarning: "1"
+Security.PasswordQualityControl: "retry=3 min=disabled,disabled,disabled,7,7"
+Security.AccountLockFailures: "5"
+Security.AccountUnlockTime: "900"
+Security.PasswordHistory: "5"
+Security.PasswordMaxDays: "99999"
+Config.HostAgent.Vmacore.Soap.SessionTimeout: "30"
+UserVars.HostClientSessionTimeout: "900"
+DCUI.Access: "root"
+Annotations.WelcomeMessage: ""
+Config.Etc.Issue: ""
+UserVars.ESXiVPsDisabledProtocols: "sslv3,tlsv1,tlsv1.1"
+Lockdown.Mode: "True"
+
+## 4 - Logging
+Syslog.Global.LogDir: "[DS-Dell-iSCSI-VDI-TEST] vdi1-r2-test"
+Syslog.Global.LogHost: ""
+Syslog.Global.LogLevel: "error"
+Config.HostAgent.Log.Level: "info"
+Syslog.Global.LogFiltersEnable: "False"
+Syslog.Global.AuditRecord.StorageEnable: "False"
+Syslog.Global.AuditRecord.StorageDirectory: "[] /scratch/auditLog"
+Syslog.Global.AuditRecord.StorageCapacity: "4"
+Syslog.Global.AuditRecord.RemoteEnable: "False"
+Syslog.Global.Certificate.CheckSSLCerts: "True"
+Syslog.Global.Certificate.StrictX509Compliance: "False"
+
+## 5 - Network
+Net.DVFilterBindIpAddress: ""
+Net.BlockGuestBPDU: "1"

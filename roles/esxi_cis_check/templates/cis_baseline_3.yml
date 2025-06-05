@@ -1,0 +1,52 @@
+---
+## 1 - Hardware
+
+## 2 - Base
+Software.Acceptance.Level: "PartnerSupported"
+VMkernel.Boot.ExecInstalledOnly: "False"
+Ntp.Servers: "130.223.8.30,130.223.4.5"
+Ntpd.Service: "True"
+Hardware.TrustedPlatformModule: "TPM"
+UserVars.SuppressHyperthreadWarning: "0"
+Mem.ShareForceSalting: "2"
+
+## 3 - Management
+TSM-SSH.Service: "False"
+TSM.Service: "False"
+Slpd.Service: "False"
+Sfcbd-watchdog.Service : "False"
+Snmpd.Service: "True"
+Config.HostAgent.plugins.solo.enableMob: "False"
+UserVars.DcuiTimeOut: "600"
+UserVars.ESXiShellInteractiveTimeOut: "300"
+UserVars.ESXiShellTimeOut: "3600"
+UserVars.SuppressShellWarning: "1"
+Security.PasswordQualityControl: "retry=3 min=disabled,disabled,disabled,7,7"
+Security.AccountLockFailures: "5"
+Security.AccountUnlockTime: "900"
+Security.PasswordHistory: "5"
+Security.PasswordMaxDays: "99999"
+Config.HostAgent.Vmacore.Soap.SessionTimeout: "30"
+UserVars.HostClientSessionTimeout: "900"
+DCUI.Access: "root"
+Annotations.WelcomeMessage: "Hello!!! You are connected to emx7ve10xh.ch.pbk esx host. Unauthorized use of this resource is prohibited. The system is routinely monitored for performance and security. Logging into and use of this system constitutes agreement to that monitoring. Any actions taken in violation of Azqore's Acceptable User Policy and/or client agreements will result in appropriate disciplinary and/or legal action. VMware ESXI 8.03 build 24585383 ."
+Config.Etc.Issue: "Hello!!! You are connected to emx7ve10xh.ch.pbk esx host. Unauthorized use of this resource is prohibited. The system is routinely monitored for performance and security. Logging into and use of this system constitutes agreement to that monitoring. Any actions taken in violation of Azqore's Acceptable User Policy and/or client agreements will result in appropriate disciplinary and/or legal action. VMware ESXI 8.03 build 24585383 ."
+UserVars.ESXiVPsDisabledProtocols : "sslv3,tlsv1,tlsv1.1"
+Lockdown.Mode: "False"
+
+## 4 - Logging
+Syslog.Global.LogDir: "[DS_IBM_10X1_020f_4TB_CoreDump] syslog"
+Syslog.Global.LogHost: "udp://10.137.232.113:514"
+Syslog.Global.LogLevel: "error"
+Config.HostAgent.Log.Level: "info"
+Syslog.Global.LogFiltersEnable: "false"
+Syslog.Global.AuditRecord.StorageEnable: "false"
+Syslog.Global.AuditRecord.StorageDirectory: "[] /scratch/auditLog"
+Syslog.Global.AuditRecord.StorageCapacity: "4"
+Syslog.Global.AuditRecord.RemoteEnable: "false"
+Syslog.Global.Certificate.CheckSSLCerts: "true"
+Syslog.Global.Certificate.StrictX509Compliance: "false"
+
+## 5 - Network
+Net.DVFilterBindIpAddress: ""
+Net.BlockGuestBPDU: "1"

@@ -1,0 +1,16 @@
+---
+## Differences between vdi-r2-test.dcsr.unil.ch and CIS baseline
+Lockdown.Mode -> baseline="False", host="True"
+Snmpd.Service -> baseline="True", host="Unknown"
+Slpd.Service -> baseline="False", host="Unknown"
+Sfcbd-watchdog.Service -> baseline="False", host="Unknown"
+Syslog.Global.LogHost -> baseline="udp://10.137.232.113:514", host=""
+UserVars.ESXiShellTimeOut -> baseline="3600", host="0"
+Config.Etc.Issue -> baseline="Hello!!! You are connected to emx7ve10xh.ch.pbk esx host. Unauthorized use of this resource is prohibited. The system is routinely monitored for performance and security. Logging into and use of this system constitutes agreement to that monitoring. Any actions taken in violation of Azqore's Acceptable User Policy and/or client agreements will result in appropriate disciplinary and/or legal action. VMware ESXI 8.03 build 24585383 .", host=""
+TSM-SSH.Service -> baseline="False", host="Unknown"
+UserVars.ESXiShellInteractiveTimeOut -> baseline="300", host="0"
+Hardware.TrustedPlatformModule -> baseline="TPM", host="NONE"
+Ntp.Servers -> baseline="130.223.8.30,130.223.4.5", host="130.223.8.20,130.223.4.5"
+TSM.Service -> baseline="False", host="Unknown"
+Syslog.Global.LogDir -> baseline="[DS_IBM_10X1_020f_4TB_CoreDump] syslog", host="[DS-Dell-iSCSI-VDI-TEST] vdi1-r2-test"
+Annotations.WelcomeMessage -> baseline="Hello!!! You are connected to emx7ve10xh.ch.pbk esx host. Unauthorized use of this resource is prohibited. The system is routinely monitored for performance and security. Logging into and use of this system constitutes agreement to that monitoring. Any actions taken in violation of Azqore's Acceptable User Policy and/or client agreements will result in appropriate disciplinary and/or legal action. VMware ESXI 8.03 build 24585383 .", host=""
